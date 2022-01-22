@@ -22,7 +22,8 @@ main_actor_birthdate_list = []
 main_actor_height_list = []
 main_actor_trivia_list = []
 main_actor_titlerefs_list = []
-
+movie_index = []
+i = 0
 for marvel_movie in MCU_Comics :
 
     movies = movies_database.search_movie(marvel_movie)
@@ -71,11 +72,13 @@ for marvel_movie in MCU_Comics :
     main_actor_height_list.append(height)
     main_actor_trivia_list.append(trivia)
     main_actor_titlerefs_list.append(titleRefsStr)
+    movie_index.append(i)
+    i+=1
 
 
 zippedlist = list(zip(title_list,year_list,directors_list,casting_list,genre_list,
                       main_actor_name_list, main_actor_birthdate_list, main_actor_height_list, main_actor_trivia_list,
-                      main_actor_titlerefs_list))
+                      main_actor_titlerefs_list, movie_index))
 
 with open("marvel.csv", "w") as marvel :
     marvel_writer = csv.writer(marvel, delimiter=",")

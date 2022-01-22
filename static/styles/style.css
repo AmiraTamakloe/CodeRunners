@@ -1,0 +1,152 @@
+* {
+	padding : 0;
+	margin:0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Circular Std, sans-serif;
+	margin: 0;
+	color: white;
+	background: linear-gradient(270deg, #17E180, #2F40B3);
+	background-size: 300vh 300vw;
+	background-position: top center;
+}
+
+.box {
+	background-color: #201D20;
+	padding: 40px;
+	border-radius: 15px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	border: 2px solid transparent;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	width: 70vw;
+}
+
+textarea,input{
+	background-color: #363136;
+	border: 2px solid #514A51;
+	border-radius: 5px;
+	padding: 15px;
+	color: white;
+	font-family: Circular Std, sans-serif;
+	font-weight: 200;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	width: 100%;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	float: left;
+}
+
+
+
+textarea:focus, input:focus{
+	border: 2px solid #9F959F;
+}
+
+
+/* Set a style for all buttons */
+button {
+	background-color: #1ACC87;
+	color: white;
+	border-radius: 5px;
+	padding: 15px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	border: none;
+	cursor: pointer;
+	width: 50%;
+	opacity: 0.9;
+	position: relative;
+	float: right;
+	font-family: Circular Std, sans-serif;
+	font-weight: 200;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+button:hover {
+	opacity:1;
+}
+
+
+/* Popup container */
+.popup {
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+	visibility: hidden;
+	width: 160px;
+	background-color: #555;
+	color: #fff;
+	text-align: center;
+	border-radius: 6px;
+	padding: 8px 0;
+	position: absolute;
+	z-index: 1;
+	bottom: 125%;
+	left: 50%;
+	margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+	visibility: visible;
+	-webkit-animation: fadeIn 1s;
+	animation: fadeIn 1s
+}
+
+.popup i{
+	color: #514A51;
+	float: right;
+	position: absolute;
+	padding: 10px
+}
+.popup i:hover{
+	color: #9F959F
+}
+
+/*input[type="checkbox"]{*/
+/*	background-color: #363136;*/
+/*	border: 2px solid #514A51;*/
+/*	border-radius: 5px;*/
+/*	padding: 15px;*/
+/*	color: white;*/
+/*	font-family: Circular Std, sans-serif;*/
+/*	font-weight: 200;*/
+/*	text-transform: uppercase;*/
+/*	letter-spacing: 2px;*/
+/*	width: 100%;*/
+/*	float: left;*/
+/*	position: inherit*/
+/*}*/
+/**/
+
+
+.checkreddit {
+	display : inline;
+	position: relative;
+	text-align : auto;
+	max-width : 100%;
+	
+}

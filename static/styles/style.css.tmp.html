@@ -1,26 +1,293 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="UTF-8">
-		<title>couch potato - your guide to staying at home.</title>
-		<link rel = "stylesheet" type = "text/css" href = "{{url_for('static', filename='styles/style.css')}}">
-		<link rel = "stylesheet" type = "text/css" href = "{{url_for('static', filename='styles/stylesheet.css')}}">
-		<!--webapp toggles-->
-		<link rel="apple-touch-icon" href="{{url_for('static', filename='images/iosicon.png')}}">	
-		<meta name="apple-mobile-web-app-title" content="couch potato">
-		<meta name = "apple-mobile-web-app-capable" content="yes">
-		
-	</head>
-	<body>
-		<div class="header">
-			<h1>couch potato</h1>
-			<h2>your guide to staying at home.</h2>
-		</div>
-		<div class="grid">
-			<div class="option1">			<a href="{{ url_for('marvel') }}" type="button" class="cta">suggest a marvel movie</a></div>
-			<div class="option2">			<a href="file:///Users/mike/Documents/GitHub/CodeRunners/static/styles/zelda.html" type="button" class="cta">coming soon</a></div>
-			<div class="option3">			<a href="file:///Users/mike/Documents/GitHub/CodeRunners/static/styles/hw.html" type="button" class="cta">coming soon</a></div>
-			<div class="option4">			<a href="file:///Users/mike/Documents/GitHub/CodeRunners/static/styles/marvel.html" type="button" class="cta">coming soon</a></div>
-		</div>
-	</body>
-</html>
+<style>
+@import (./fonts/PPAgrandir-WideBlackItalic.otf);
+@import (./fonts/PPAgrandir-TextBold.otf);
+@import (./fonts/PPAgrandir-Regular.otf);
+/*@import (./fonts/PPAgrandir-.otf);*/
+/*@import (./fonts/PPAgrandir-.otf);*/
+/*@import (./fonts/PPAgrandir-.otf);*/
+/*@import (./fonts/PPAgrandir-.otf);*/
+/*@import (./fonts/PPAgrandir-.otf);*/
+@font-face {
+	font-family: 'pp_agrandirwide_light';
+	src: url('ppagrandir-widelight-webfont.woff2') format('woff2'),
+		url('ppagrandir-widelight-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	
+}
+
+
+
+
+@font-face {
+	font-family: 'pp_agrandirwide_black_italic';
+	src: url('ppagrandir-wideblackitalic-webfont.woff2') format('woff2'),
+		url('ppagrandir-wideblackitalic-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	
+}
+
+
+
+
+@font-face {
+	font-family: 'pp_agrandirtight_regular';
+	src: url('ppagrandir-tightregular-webfont.woff2') format('woff2'),
+		url('ppagrandir-tightregular-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	
+}
+
+
+
+
+@font-face {
+	font-family: 'pp_agrandirthin_italic';
+	src: url('ppagrandir-thinitalic-webfont.woff2') format('woff2'),
+		url('ppagrandir-thinitalic-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	
+}
+
+
+
+
+@font-face {
+	font-family: 'pp_agrandirtext_bold';
+	src: url('ppagrandir-textbold-webfont.woff2') format('woff2'),
+		url('ppagrandir-textbold-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	
+}
+
+
+
+
+@font-face {
+	font-family: 'pp_agrandirregular';
+	src: url('ppagrandir-regular-webfont.woff2') format('woff2'),
+		url('ppagrandir-regular-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	
+}
+
+
+
+
+@font-face {
+	font-family: 'pp_agrandirnarrow_regular';
+	src: url('ppagrandir-narrowregular-webfont.woff2') format('woff2'),
+		url('ppagrandir-narrowregular-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	
+}
+
+
+
+
+@font-face {
+	font-family: 'pp_agrandirgrand_light';
+	src: url('ppagrandir-grandlight-webfont.woff2') format('woff2'),
+		url('ppagrandir-grandlight-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	
+}
+
+
+
+
+@font-face {
+	font-family: 'pp_agrandirgrand_heavy';
+	src: url('ppagrandir-grandheavy-webfont.woff2') format('woff2'),
+		url('ppagrandir-grandheavy-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	
+}
+
+
+* {
+	padding : 0;
+	margin:0;
+	box-sizing: border-box;
+}
+
+.header {
+	padding-top: 20%;
+	padding-left: 20%;
+	padding-right: 20%;
+	padding-bottom:0;
+}
+.header h1{
+	font-family: 'pp_agrandirwide_black_italic';
+	font-weight: normal;
+	font-style: normal;
+	font-size: 3rem;
+}
+
+.header h2{
+	font-family: 'pp_agrandirtext_bold', sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 1.5rem;
+}
+
+.grid{
+	display: inline-grid;
+	grid-gap: 3%;
+	padding-bottom: 20%;
+	padding-left: 20%;
+	padding-right: 20%;
+	padding-top:0;
+	width:100%;
+	flex:70%;
+	ms-flex:70%;
+	
+}
+
+.option1{
+	grid-column-start:1;
+	grid-column-end:1;
+	grid-row-start:1;
+	grid-row-end:1;
+}
+.option2{
+	grid-column-start:2;
+	grid-column-end:2;
+	grid-row-start:1;
+	grid-row-end:1;
+}
+.option3{
+	grid-column-start:1;
+	grid-column-end:1;
+	grid-row-start:2;
+	grid-row-end:2;
+}
+.option4{
+	grid-column-start:2;
+	grid-column-end:2;
+	grid-row-start:2;
+	grid-row-end:2;
+}
+body {
+	font-family: 'pp_agrandirregular';
+	font-weight: normal;
+	font-style: normal;
+	
+	margin: 0;
+	color: white;
+	background: linear-gradient(270deg, #2E1465, #787BC8, #9E97CA, #ECCFCF);
+	background-size: 600vh 600vw;
+	background-position: top center;
+	position: relative;
+	z-index:1;
+	overflow: hidden;
+	-webkit-animation: AnimationName 10s ease infinite;
+	-moz-animation: AnimationName 10s ease infinite;
+	animation: AnimationName 10s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+	0%{background-position:0% 50%}
+	50%{background-position:100% 50%}
+	100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+	0%{background-position:0% 50%}
+	50%{background-position:100% 50%}
+	100%{background-position:0% 50%}
+}
+@keyframes AnimationName { 
+	0%{background-position:0% 50%}
+	50%{background-position:100% 50%}
+	100%{background-position:0% 50%}
+}
+
+
+/* Set a style for all buttons */
+button {
+	background-color: #1ACC87;
+	color: white;
+	border-radius: 5px;
+	padding: 15px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	border: none;
+	cursor: pointer;
+	width: 50%;
+	opacity: 0.9;
+	position: relative;
+	float: right;
+	font-family: Circular Std, sans-serif;
+	font-weight: 200;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+button:hover {
+	opacity:1;
+}
+
+
+
+
+
+.cta {
+/*font-family: 'DM Mono', monospace;*/
+/*font-weight: 700;*/
+	font-style: italic;
+	font-style: underline;
+	display : inline-block;
+	padding: 10px 30px;
+	color: #201461;
+	background-color : #F2EBDA;
+	border:  2px transparent;
+	border-radius: 30px;
+	opacity: 100%;
+	font-size: 1.5rem;
+	letter-spacing: .1rem;
+	margin-top: 30px;
+	transition: .3s ease ;
+	transition-property: all;
+}
+.cta:hover {
+	color: #201461;
+	/*filter: drop-shadow(5px 5px 5px #201461);*/
+	opacity: 75%;
+	/*background-color: black;*/
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+	.header, .grid, .footer {
+		padding: 5%;
+	}
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+	.header, .grid, .footer {
+		padding: 5%;
+	}
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 100vw) {
+	.column {
+		width: 50%;
+	}
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 60vh) {
+	.header, .grid, .footer {
+		padding: 5%;
+	}
+}</style>

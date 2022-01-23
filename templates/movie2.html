@@ -1,36 +1,35 @@
 <!DOCTYPE html>
 <html>
         <head>
-            
+
             <title>Marvelpage</title>
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1">
             <link rel="stylesheet" href="marvelformovie.css">
-                        
+
     </head>
     <body>
-        
-    
-        
-        <h1 style ="line-height: 120px; font-size: 60px;;">if you <span>liked that movie, <br> then you'll love these: </h1>
-        
+
+
+
+        <h1 style ="margin-top:80px; line-height: 150px; font-size: 70px; text-align: left; ">if you liked that movie, then you'll <span style = "color: #ED1D24;font-family:'marvelregular';">LOVE</span>  </h1>
+
+                    
         <div class="row">
             <div class="column">
                 <img src={{poster1}} alt="{{movie1}}"> 
                 <p>{{movie1}}</p>
             </div>
             <div class="column">
-                <img src="{{poster2}}" alt="{{movie2}}">
-                <p>{{movie2}}</p>
+                <img src={{poster2}} alt="{{movie2}}"> 
+                <p>{{movie1}}</p>
             </div>
             <div class="column">
-                <img src="{{poster3}}" alt="{{movie3}}">
-                <p>{{movie3}}</p>
-
+                <img src={{poster3}} alt="{{movie3}}"> 
+                <p>{{movie1}}</p>
             </div>
-            
         </div>
-                
+
     </body>
-    <button style = "margin-top: 200px; " onclick="window.location.href='{{url_for('moviesearch')}}'">back</button>
+    <button class = "bouton1" style = "text-align: center; " onclick="window.location.href='{{url_for('moviesearch')}}'">back</button>
 </html>

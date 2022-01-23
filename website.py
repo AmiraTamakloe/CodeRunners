@@ -4,7 +4,7 @@ from datetime import timedelta
 from mcu import recommandation
 
 #Dict des posters
-posters = {"Iron Man":"static/img/iron1.jpg", "The Incredible Hulk":"static/img/hulk.jpg", "Iron Man 2":"static/img/ironman2.jpg", "Thor":"static/img/thor.jpg", "Captain America: The First Avenger":"static/img/cap1staven.jpg", "Marvel's The Avengers":"static/img/avengers.jpg",
+posters = {"Iron Man":"static/img/iron1.jpg", "The Incredible Hulk":"static/img/hulk.jpg", "Iron Man 2":"static/img/ironman2.jpg", "Thor":"static/img/thor.jpg", "Captain America: The First Avenger":"static/img/cap1staven.jpg", "The Avengers":"static/img/avengers.jpg",
               "Iron Man 3":"static/img/ironman3.jpeg", "Thor: The Dark World":"static/img/thordarkworld.jpg", "Captain America: The Winter Soldier":"static/img/capwinter.jpg", "Guardians of the Galaxy":"static/img/guardians.jpeg", "Avengers: Age of Ultron":"static/img/ultron.jpg",
               "Ant-Man":"static/img/ant.jpeg","Captain America : Civil War":"static/img/civilwar.webp", "Doctor Strange":"static/img/docstrange.jpg", "Guardians of the Galaxy Vol. 2":"static/img/guardians2.webp", "Spider-Man: Homecoming":"static/img/homecoming.jpeg",
               "Thor: Ragnarok":"static/img/ragnarok.jpg", "Black Panther":"static/img/blackpanther.jpg", "Avengers: Infinity War":"static/img/infinity.jpg", "Ant-Man and the Wasp":"static/img/wasp.jpg", "Captain Marvel":"static/img/capmarvel.jpg", "Avengers: Endgame":"static/img/aven.jpeg",

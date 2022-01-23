@@ -7,5 +7,9 @@ app = Flask(__name__)
 def home():
 	return render_template("index.html")
 
+@app.route("/marvel.html")
+def marvel():
+	return render_template("marvel.html")
+
 if __name__ == "__main__":
 	app.run(host="localhost", port=80, debug=True)

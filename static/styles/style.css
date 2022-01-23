@@ -1,11 +1,116 @@
 @import (./fonts/PPAgrandir-WideBlackItalic.otf);
 @import (./fonts/PPAgrandir-TextBold.otf);
-@import (./fonts/SPPAgrandir-Regular.otf);
+@import (./fonts/PPAgrandir-Regular.otf);
 /*@import (./fonts/PPAgrandir-.otf);*/
 /*@import (./fonts/PPAgrandir-.otf);*/
 /*@import (./fonts/PPAgrandir-.otf);*/
 /*@import (./fonts/PPAgrandir-.otf);*/
 /*@import (./fonts/PPAgrandir-.otf);*/
+@font-face {
+	font-family: 'pp_agrandirwide_light';
+	src: url('ppagrandir-widelight-webfont.woff2') format('woff2'),
+		url('ppagrandir-widelight-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	
+}
+
+
+
+
+@font-face {
+	font-family: 'pp_agrandirwide_black_italic';
+	src: url('ppagrandir-wideblackitalic-webfont.woff2') format('woff2'),
+		url('ppagrandir-wideblackitalic-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	
+}
+
+
+
+
+@font-face {
+	font-family: 'pp_agrandirtight_regular';
+	src: url('ppagrandir-tightregular-webfont.woff2') format('woff2'),
+		url('ppagrandir-tightregular-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	
+}
+
+
+
+
+@font-face {
+	font-family: 'pp_agrandirthin_italic';
+	src: url('ppagrandir-thinitalic-webfont.woff2') format('woff2'),
+		url('ppagrandir-thinitalic-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	
+}
+
+
+
+
+@font-face {
+	font-family: 'pp_agrandirtext_bold';
+	src: url('ppagrandir-textbold-webfont.woff2') format('woff2'),
+		url('ppagrandir-textbold-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	
+}
+
+
+
+
+@font-face {
+	font-family: 'pp_agrandirregular';
+	src: url('ppagrandir-regular-webfont.woff2') format('woff2'),
+		url('ppagrandir-regular-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	
+}
+
+
+
+
+@font-face {
+	font-family: 'pp_agrandirnarrow_regular';
+	src: url('ppagrandir-narrowregular-webfont.woff2') format('woff2'),
+		url('ppagrandir-narrowregular-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	
+}
+
+
+
+
+@font-face {
+	font-family: 'pp_agrandirgrand_light';
+	src: url('ppagrandir-grandlight-webfont.woff2') format('woff2'),
+		url('ppagrandir-grandlight-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	
+}
+
+
+
+
+@font-face {
+	font-family: 'pp_agrandirgrand_heavy';
+	src: url('ppagrandir-grandheavy-webfont.woff2') format('woff2'),
+		url('ppagrandir-grandheavy-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	
+}
+
 
 * {
 	padding : 0;
@@ -20,12 +125,16 @@
 	padding-bottom:0;
 }
 .header h1{
-	font-family: PP Agrandir Wide Black Italic, sans-serif;
+	font-family: 'pp_agrandirwide_black_italic';
+	font-weight: normal;
+	font-style: normal;
 	font-size: 3rem;
 }
 
 .header h2{
-	font-family: PP Agrandir Text Bold, sans-serif;
+	font-family: 'pp_agrandirtext_bold', sans-serif;
+	font-weight: normal;
+	font-style: normal;
 	font-size: 1.5rem;
 }
 
@@ -67,7 +176,10 @@
 	grid-row-end:2;
 }
 body {
-	font-family: PP Agrandir Regular, sans-serif;
+	font-family: 'pp_agrandirregular';
+	font-weight: normal;
+	font-style: normal;
+	
 	margin: 0;
 	color: white;
 	background: linear-gradient(270deg, #2E1465, #787BC8, #9E97CA, #ECCFCF);

@@ -4,8 +4,13 @@
         <title>Recommendations</title>
     </head>
     <body>
-        <h1>Your recommendations</h1>
-        <p>{{content}}</p>    
+        <h1>if you liked that movie, then you'll love these: </h1>
+        <img src={{poster1}} alt="{{movie1}}">
+        <p>{{movie1}}</p>
+        <img src="{{poster2}}" alt="{{movie2}}">
+        <p>{{movie2}}</p>
+        <img src="{{poster3}}" alt="{{movie2}}">
+        <p>{{movie3}}</p>
     </body>
-    <button onclick="window.location.href='{{ url_for('moviesearch')}}'">back</button>
+    <button onclick="window.location.href='{{url_for('moviesearch')}}'">back</button>
 </html>

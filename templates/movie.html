@@ -1,36 +1,39 @@
 <!DOCTYPE html>
 <html>
         <head>
-            
-            <title>Marvelpage</title>
+
+            <title>your movie suggestions</title>
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1">
+            <meta name = "apple-mobile-web-app-capable" content="yes">
             <link rel="stylesheet" href="marvelformovie.css">
-                        
+            <link rel = "stylesheet" type = "text/css" href = "{{url_for('static', filename='styles/marvelformovie.css')}}">
+            <link rel = "stylesheet" type = "text/css" href = "{{url_for('static', filename='styles/movie.css')}}">
+            <script src="https://kit.fontawesome.com/335df166b2.js" crossorigin="anonymous"></script>
+
     </head>
     <body>
-        
-    
-        
-        <h1 style ="line-height: 120px; font-size: 60px;;">if you <span>liked that movie, <br> then you'll love these: </h1>
-        
+        <button class="button1 button4" style="margin:2%;"onclick="window.location.href='{{url_for('moviesearch')}}'"><i class="fas fa-arrow-left"></i> back</button>	
+        <div class="header">
+            <h1>couch potato</h1>
+        </div>
+        <div class="yas">
+        <p class = "slay" style="margin-top: -40px;"><b>if you liked that movie, then you'll</b><span style= "color: white; background-color: ;olor: #ED1D24; font-family: 'marvelregular';font-size: 70px;"><b> LOVE</b></span> <b>these!</b><b></b></p>
+        </div>
         <div class="row">
             <div class="column">
                 <img src={{poster1}} alt="{{movie1}}"> 
                 <p>{{movie1}}</p>
             </div>
             <div class="column">
-                <img src="{{poster2}}" alt="{{movie2}}">
+                <img src={{poster2}} alt="{{movie2}}"> 
                 <p>{{movie2}}</p>
             </div>
             <div class="column">
-                <img src="{{poster3}}" alt="{{movie3}}">
+                <img src={{poster3}} alt="{{movie3}}">
                 <p>{{movie3}}</p>
-
             </div>
-            
         </div>
-                
+
     </body>
-    <button style = "margin-top: 200px; " onclick="window.location.href='{{url_for('moviesearch')}}'">back</button>
 </html>

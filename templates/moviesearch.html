@@ -1,146 +1,151 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <meta name = "apple-mobile-web-app-capable" content="yes">
+        <link rel="stylesheet" href = "{{url_for('static', filename='styles/marvel.css')}}">
         <title>marvel movie search</title>
+        <script src="https://kit.fontawesome.com/335df166b2.js" crossorigin="anonymous"></script>
     </head>
     <body>
+        <button class="button1 button4" style="margin:2%;"onclick="window.location.href='{{url_for('marvel')}}'"><i class="fas fa-arrow-left"></i> back</button>	
+        <div class="header">
+            <h1>couch potato</h1>
+        </div>
+
+        <div class = "yas">
         <div class="container-fluid">
-            <h1>What movie are you looking for?</h1>
+            <h2>choose a marvel movie you've watched & liked!</h2>
             <form method="POST">
-                <p>choose a marvel movie you've watched & liked!</p>
+                <p>these are organized by release phases, but you can only pick one.</p>
                 <div>
                     <div class="phase">
-                        <h1 class="section-title">This is Phase 1: </h1>                   
-                    </div>
+                        <h3 class="section-title">phase 1</h3>                 
                     <input type="radio" id="variableChoice1"
                         name="variable" value="Iron Man">
-                    <label for="variableChoice1">Iron Man (2008)</label>
+                    <label for="variableChoice1">Iron Man (2008)</label><br>
                     
                     <input type="radio" id="variableChoice2"
                         name="variable" value="The Incredible Hulk">
-                    <label for="variableChoice2">The Incredible Hulk (2008)</label>
+                    <label for="variableChoice2">The Incredible Hulk (2008)</label><br>
                     
                     <input type="radio" id="variableChoice3"
                         name="variable" value="Iron Man 2">
-                    <label for="variableChoice3">Iron Man 2 (2010)</label>
+                    <label for="variableChoice3">Iron Man 2 (2010)</label><br>
                     
                     <input type="radio" id="variableChoice1"
                         name="variable" value="Thor">
-                    <label for="variableChoice1">Thor (2011)</label>
+                    <label for="variableChoice1">Thor (2011)</label><br>
                     
                     <input type="radio" id="variableChoice2"
                         name="variable" value="Captain America: The First Avenger">
-                    <label for="variableChoice2">Captain America: The First Avenger (2011)</label>
+                    <label for="variableChoice2">Captain America: The First Avenger (2011)</label><br>
                     
                     <input type="radio" id="variableChoice3"
                         name="variable" value="Marvel's The Avengers">
-                    <label for="variableChoice3">The Avengers (2012)</label>
-                    
+                    <label for="variableChoice3">The Avengers (2012)</label><br>
+                    </div>
                     
                     
                     <div class="phase">
-                        <h1 class="section-title">This is Phase 2: </h1>                   
-                    </div>
+                        <h3 class="section-title">phase 2</h3>                  
                     <input type="radio" id="variableChoice1"
                         name="variable" value="Iron Man 3">
-                    <label for="variableChoice1">Iron Man 3 (2013)</label>
+                    <label for="variableChoice1">Iron Man 3 (2013)</label><br>
                     
                     <input type="radio" id="variableChoice2"
                         name="variable" value="Thor: The Dark World">
-                    <label for="variableChoice2">Thor: The Dark World (2013)</label>
+                    <label for="variableChoice2">Thor: The Dark World (2013)</label><br>
                     
                     <input type="radio" id="variableChoice3"
                         name="variable" value="Captain America: The Winter Soldier">
-                    <label for="variableChoice3">Captain America: The Winter Soldier (2014)</label>
+                    <label for="variableChoice3">Captain America: The Winter Soldier (2014)</label><br>
                     
                     <input type="radio" id="variableChoice1"
                         name="variable" value="Guardians of the Galaxy">
-                    <label for="variableChoice1">Guardians of the Galaxy (2014)</label>
+                    <label for="variableChoice1">Guardians of the Galaxy (2014)</label><br>
                     
                     <input type="radio" id="variableChoice2"
                         name="variable" value="Avengers: Age of Ultron">
-                    <label for="variableChoice2">Avengers: Age of Ultron (2015)</label>
+                    <label for="variableChoice2">Avengers: Age of Ultron (2015)</label><br>
                     
                     <input type="radio" id="variableChoice3"
                         name="variable" value="Ant-Man">
-                    <label for="variableChoice3">Ant-Man (2015)</label>
-                    
+                    <label for="variableChoice3">Ant-Man (2015)</label><br>
+                    </div>
                     
                     
                     
                     <div class="phase">
-                        <h1 class="section-title">This is Phase 3: </h1>                   
-                    </div>
+                        <h3 class="section-title">phase 3</h3>                   
                     <input type="radio" id="variableChoice1"
                         name="variable" value="Captain America : Civil War">
-                    <label for="variableChoice1">Captain America: Civil War (2016) </label>
+                    <label for="variableChoice1">Captain America: Civil War (2016) </label><br>
                     
                     <input type="radio" id="variableChoice2"
                         name="variable" value="Doctor Strange">
-                    <label for="variableChoice2">Doctor Strange (2016)</label>
+                    <label for="variableChoice2">Doctor Strange (2016)</label><br>
                     
                     <input type="radio" id="variableChoice3"
                         name="variable" value="Guardians of the Galaxy Vol. 2">
-                    <label for="variableChoice3">Guardians of the Galaxy 2 (2017)</label>
+                    <label for="variableChoice3">Guardians of the Galaxy 2 (2017)</label><br>
                     
                     <input type="radio" id="variableChoice1"
                         name="variable" value="Spider-Man: Homecoming">
-                    <label for="variableChoice1">Spider-Man: Homecoming (2017)</label>
+                    <label for="variableChoice1">Spider-Man: Homecoming (2017)</label><br>
                     
                     <input type="radio" id="variableChoice2"
                         name="variable" value="Thor: Ragnarok">
-                    <label for="variableChoice2">Thor: Ragnarok (2017)</label>
+                    <label for="variableChoice2">Thor: Ragnarok (2017)</label><br>
                     
                     <input type="radio" id="variableChoice3"
                         name="variable" value="Black Panther">
-                    <label for="variableChoice3">Black Panther (2017)</label>
+                    <label for="variableChoice3">Black Panther (2017)</label><br>
                     
                     <input type="radio" id="variableChoice2"
                         name="variable" value="Avengers: Infinity War">
-                    <label for="variableChoice2">Avengers: Infinity War (2018)</label>
+                    <label for="variableChoice2">Avengers: Infinity War (2018)</label><br>
                     
                     <input type="radio" id="variableChoice3"
                         name="variable" value="Ant-Man and the Wasp">
-                    <label for="variableChoice3">Ant-Man and the Wasp (2018)</label>
+                    <label for="variableChoice3">Ant-Man and the Wasp (2018)</label><br>
                     
                     <input type="radio" id="variableChoice1"
                         name="variable" value="Captain Marvel">
-                    <label for="variableChoice1">Captain Marvel (2019)</label>
+                    <label for="variableChoice1">Captain Marvel (2019)</label><br>
                     
                     <input type="radio" id="variableChoice3"
                         name="variable" value="Avengers: Endgame">
-                    <label for="variableChoice3">Avengers: Endgame (2019)</label>
+                    <label for="variableChoice3">Avengers: Endgame (2019)</label><br>
                     
                     <input type="radio" id="variableChoice1"
                         name="variable" value="Spider-Man: Far From Home">
                     <label for="variableChoice1">Spider-Man: Far From Home (2019)</label>
-                
+                </div>
                     
                     
                     <div class="phase">
-                        <h1 class="section-title">This is Phase 4: </h1>                   
-                    </div>
+                        <h3 class="section-title">phase 4</h3>                   
                     <input type="radio" id="variableChoice1"
                         name="variable" value="Black Widow">
-                    <label for="variableChoice1">Black Widow (2021)</label>
+                    <label for="variableChoice1">Black Widow (2021)</label><br>
                     
                     <input type="radio" id="variableChoice2"
                         name="variable" value="Shang-Chi and the Legend of the Ten Rings">
-                    <label for="variableChoice2">Shang-Chi and the Legend of the Ten Rings (2021)</label>
+                    <label for="variableChoice2">Shang-Chi and the Legend of the Ten Rings (2021)</label><br>
                     
                     <input type="radio" id="variableChoice3"
                         name="variable" value="Eternals">
-                    <label for="variableChoice3">Eternals (2021)</label>
+                    <label for="variableChoice3">Eternals (2021)</label><br>
                     
                     <input type="radio" id="variableChoice1"
                         name="variable" value="Spider-Man: No Way Home">
                     <label for="variableChoice1">Spider-Man: No Way Home (2021)</label>
 
                 </div>
-                <div>
-                <input type="submit">
+                </div><br><br>
+                <input type="submit" class = "button">
             </form>
+        </div>
         </div>
     </body>
 </html>
